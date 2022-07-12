@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow Übung lev2_3: HTML-Vertiefung / Forms</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form>
+        <!-- Register Form -->
+        <fieldset>
+          <legend>Register form</legend>
+          <table>
+            <tr>
+                <td><label for="firstname">Name</label></td>
+                <td><input type="text" name="firstname" id="firstname" placeholder="Name"></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Surname</label></td>
+                <td><input type="text" name="surname" id="surname" placeholder="Surname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail</label></td>
+                <td><input type="email" name="email" id="email" placeholder="E-Mail"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="picture">Picture</label></td>
+                <td><input type="file" name="picture" id="picture"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="Germany">Germany</option>
+                        <option value="Spain">Spain</option>
+                        <option value="France">France</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="languages">Preferred Languages</label></td>
+                <td>
+                    <select name="languages" id="languages" multiple>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JS</option>
+                        <option value="react">React</option>
+                    </select>
+                    <label for="howto">(To choose more than one use cmd key)</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="field">Field of activity</label></td>
+                <td>
+                    <input type="checkbox" name="it" id="checkbox">
+                    <label for="it">IT</label>
+                    <input type="checkbox" name="design" id="checkbox">
+                    <label for="design">Design</label>
+                    <input type="checkbox" name="other" id="checkbox">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="submit" value="Send">
+                <input type="submit" value="Cancel">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+  
+</body>
+
+</html>
